@@ -1,9 +1,16 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: first-step
         run: echo "Hello World!"
+      - name: second-step
+        run: echo "second step"
+  second-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second-job-first-step
+        run: echo "inside of second job"
   
