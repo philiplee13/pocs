@@ -1,0 +1,32 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: apicurio
+#   namespace: apicurio
+#   labels:
+#     app: apicurio
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: apicurio
+#   template:
+#     metadata:
+#       labels:
+#         app: apicurio
+#     spec:
+#       containers:
+#       - name: apicurio
+#         image: "apicurio/apicurio-registry:latest-snapshot"
+#         ports:
+#         - name: schema-registry
+#           containerPort: 8080
+#           protocol: TCP
+#         resources:
+#           requests:
+#             memory: "64Mi"
+#             cpu: "250m"
+#           limits:
+#             memory: "128Mi"
+#             cpu: "500m"
+# https://github.com/Apicurio/apicurio-registry/blob/main/examples/openshift-template/apicurio-registry-template-mem.yml
