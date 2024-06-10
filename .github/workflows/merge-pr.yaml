@@ -13,6 +13,7 @@ jobs:
         run: echo "second step"
   second-jobs:
     runs-on: ubuntu-latest
+    environment: dev
     needs: [first-job]
     steps:
       - name: second-job-first-step
