@@ -13,6 +13,7 @@ jobs:
         run: echo "tag second step"
   second-jobs:
     runs-on: ubuntu-latest
+    environment: dev
     needs: [tag-first-job]
     steps:
       - name: tag-second-job-first-step
