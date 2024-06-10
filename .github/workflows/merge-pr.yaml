@@ -18,4 +18,12 @@ jobs:
     steps:
       - name: second-job-first-step
         run: echo "inside of second jobs"
-  
+  create-tag:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
