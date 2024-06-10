@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - main
+  pull_request:
+
+
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -18,12 +25,15 @@ jobs:
     steps:
       - name: second-job-first-step
         run: echo "inside of second jobs"
-  create-tag:
+  release-please:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
+      - uses: googleapis/release-please-action@v4
+        with:
+          # this assumes that you have created a personal access token
+          # (PAT) and configured it as a GitHub action secret named
+          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
+          # token: ${{ secrets.GITHUB_TOKEN }}
+          # this is a built-in strategy in release-please, see "Action Inputs"
+          # for more options
+          release-type: simple
