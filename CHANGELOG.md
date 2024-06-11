@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/philiplee13/pocs/compare/v1.1.1...v1.1.2) (2024-06-11)
+
+
+### Bug Fixes
+
+* update ([1c59c73](https://github.com/philiplee13/pocs/commit/1c59c7323b1a8e63200051c70f3e8173ca88e0e9))
+
 ## [1.1.1](https://github.com/philiplee13/pocs/compare/v1.1.0...v1.1.1) (2024-06-11)
 
 
