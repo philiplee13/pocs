@@ -2,7 +2,7 @@ name: test-tag-based
 on: 
   push:
     tags: 
-      - v[12].[0-9]+.[0-9]+	# semantic versioning
+      - '*'
 jobs:
   tag-first-job:
     runs-on: ubuntu-latest
