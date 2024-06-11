@@ -1,6 +1,7 @@
 name: test-tag-based
 on: 
-  create:
+  push:
+
 
 jobs:
   tag-first-job:
