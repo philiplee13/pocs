@@ -13,12 +13,14 @@ permissions:
 jobs:
   first-job:
     runs-on: ubuntu-latest
+    if: contains(github.actor, 'github-actions[bot]') == false
     steps:
       - name: first-step
         run: echo "Hello World!"
       - name: second-step
         run: echo "second step"
   second-jobs:
+    if: contains(github.actor, 'github-actions[bot]') == false
     runs-on: ubuntu-latest
     environment: dev
     needs: [first-job]
