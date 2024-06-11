@@ -1,22 +1,25 @@
 name: test-release-based
 on: 
   push:
+    branches:
+      - main
 
 
 jobs:
   tag-first-job:
-    if: ${{ steps.release.outputs.release_created }}
     runs-on: ubuntu-latest
     steps:
       - name: tag-first-step
+        if: ${{ steps.release.outputs.release_created }}
         run: echo "release first job!"
       - name: tag-second-step
+        if: ${{ steps.release.outputs.release_created }}
         run: echo "tag second step"
   second-jobs:
-    if: ${{ steps.release.outputs.release_created }}
     runs-on: ubuntu-latest
     needs: [tag-first-job]
     steps:
       - name: tag-second-job-first-step
+        if: ${{ steps.release.outputs.release_created }}
         run: echo "tag inside of second jobs"
   
