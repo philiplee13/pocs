@@ -1,8 +1,12 @@
 ## Workflow
 
-- when PR is created - `merge-pr.yaml` should run
-  - this includes when it gets merged to main
-- on merge to main
-  - `release-please.yaml` should run to create the release
-- when the `release pr` gets merged - that should trigger the `release-based.yaml`
-  - this is the workflow that should happen when we `release` a given software
+- when PR is created - `during-pr.yaml` should run github actions for all commits
+- when PR is merged - `on-merge.yaml` should run action once
+
+  ### Future
+
+  - It might be nice to include
+    - https://github.com/googleapis/release-please-action?tab=readme-ov-file
+  - potential gotchas
+    - https://github.com/googleapis/release-please-action/issues/533
+    - this can lead to recursive calls if not careful
