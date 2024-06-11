@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.0](https://github.com/philiplee13/pocs/compare/v1.2.0...v1.3.0) (2024-06-11)
+
+
+### Features
+
+* adding stuff ([1c9d423](https://github.com/philiplee13/pocs/commit/1c9d4232ca13ea489b3bb119321a4756e6351f90))
+* fix excludes branch ([1581997](https://github.com/philiplee13/pocs/commit/15819973bd50221a9c0721516b218a5f8b2c64fb))
+* test ([1c5c8a2](https://github.com/philiplee13/pocs/commit/1c5c8a2c0a6f1f70dd475fa6bcd8b142b292131c))
+
+
+### Bug Fixes
+
+* conditional for workflow ([4170ed3](https://github.com/philiplee13/pocs/commit/4170ed38f3c8c0bbe0ad079316bafd0286947d93))
+* move to new workflow ([f4ccc70](https://github.com/philiplee13/pocs/commit/f4ccc70168fc5520249ac99185ab5bdb08203bd2))
+* update ([1c59c73](https://github.com/philiplee13/pocs/commit/1c59c7323b1a8e63200051c70f3e8173ca88e0e9))
+
 ## [1.2.0](https://github.com/philiplee13/pocs/compare/v1.1.2...v1.2.0) (2024-06-11)
 
 
