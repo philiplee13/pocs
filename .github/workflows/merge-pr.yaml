@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - '!release-please*'
   pull_request:
 
 
@@ -13,14 +14,12 @@ permissions:
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    if: github.event.issue.labels.length == 0
     steps:
       - name: first-step
         run: echo "Hello World!"
       - name: second-step
         run: echo "second step"
   second-jobs:
-    if: github.event.issue.labels.length == 0
     runs-on: ubuntu-latest
     environment: dev
     needs: [first-job]
