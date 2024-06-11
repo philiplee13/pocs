@@ -15,7 +15,7 @@ jobs:
   on-merge-second-jobs:
     runs-on: ubuntu-latest
     environment: dev
-    needs: [first-job]
+    needs: [on-merge-first-job]
     steps:
       - name: second-job-first-step
         run: echo "inside of second jobs"
