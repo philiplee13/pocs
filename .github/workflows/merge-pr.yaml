@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - '!release-please*'
   pull_request:
 
 permissions:
@@ -12,6 +11,7 @@ permissions:
 
 jobs:
   first-job:
+    if: ${{ ! startsWith( github.head_ref, 'release-please*') }}
     runs-on: ubuntu-latest
     steps:
       - name: first-step
@@ -19,6 +19,7 @@ jobs:
       - name: second-step
         run: echo "second step"
   second-jobs:
+    if: ${{ ! startsWith( github.head_ref, 'release-please*') }}
     runs-on: ubuntu-latest
     environment: dev
     needs: [first-job]
