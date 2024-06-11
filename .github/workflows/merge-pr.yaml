@@ -30,7 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
-        if: github.ref == 'refs/head/main' && github.event_name == 'push' 
         with:
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
