@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/philiplee13/pocs/compare/v1.3.0...v1.3.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* bug in workflow ([460ed87](https://github.com/philiplee13/pocs/commit/460ed87093e31f4b796f1fe9a411c9279053601c))
+* update ([a276d27](https://github.com/philiplee13/pocs/commit/a276d27de8f64a388e00e959c51920904dc76f15))
+
 ## [1.3.0](https://github.com/philiplee13/pocs/compare/v1.2.0...v1.3.0) (2024-06-11)
 
 
