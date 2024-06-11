@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/philiplee13/pocs/compare/v1.1.0...v1.1.1) (2024-06-11)
+
+
+### Bug Fixes
+
+* conditional for workflow ([4170ed3](https://github.com/philiplee13/pocs/commit/4170ed38f3c8c0bbe0ad079316bafd0286947d93))
+* move to new workflow ([f4ccc70](https://github.com/philiplee13/pocs/commit/f4ccc70168fc5520249ac99185ab5bdb08203bd2))
+
 ## [1.1.0](https://github.com/philiplee13/pocs/compare/v1.0.0...v1.1.0) (2024-06-11)
 
 
