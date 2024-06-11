@@ -27,6 +27,7 @@ jobs:
         run: echo "inside of second jobs"
   release-please:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - uses: googleapis/release-please-action@v4
         with:
